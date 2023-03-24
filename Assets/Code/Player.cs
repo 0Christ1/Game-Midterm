@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
         // Vector2 pos = transform.position;
         // pos.x+=xpos;
         // transform.position = pos;
-        grounded = Physics2D.OverlapCircle(feet.position,.3f,whatIsGround);
+        grounded = Physics2D.OverlapCircle(feet.position,.4f,whatIsGround);
         if(Input.GetButtonDown("Jump")&& grounded)
         {
             _rigidbody.AddForce(new Vector2(0, jumpForce));
