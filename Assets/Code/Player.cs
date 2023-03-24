@@ -20,8 +20,14 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
+        
         float xSpeed = Input.GetAxis("Horizontal")*speed;
         _rigidbody.velocity = new Vector2(xSpeed, _rigidbody.velocity.y);
+        // int xScale = transform
+        // if(speed < 0&&)
+        // {
+
+        // }
     }
     // Update is called once per frame
     void Update()
@@ -30,7 +36,7 @@ public class Player : MonoBehaviour
         // Vector2 pos = transform.position;
         // pos.x+=xpos;
         // transform.position = pos;
-        grounded = Physics2D.OverlapCircle(feet.position,.3f,whatIsGround);
+        grounded = Physics2D.OverlapCircle(feet.position,.2f,whatIsGround);
         if(Input.GetButtonDown("Jump")&& grounded)
         {
             _rigidbody.AddForce(new Vector2(0, jumpForce));
