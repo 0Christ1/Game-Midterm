@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public int speed = 10;
     public int jumpForce = 700;
     private Rigidbody2D _rigidbody;
+    private Animator  _animator;
 
     public LayerMask whatIsGround;
     public Transform feet;
@@ -16,6 +17,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -23,11 +25,28 @@ public class Player : MonoBehaviour
         
         float xSpeed = Input.GetAxis("Horizontal")*speed;
         _rigidbody.velocity = new Vector2(xSpeed, _rigidbody.velocity.y);
-        // int xScale = transform
+        
+        // folat xScale = transform
         // if(speed < 0&&)
         // {
 
         // }
+        // if(Input.GetAxis("Horizontal")<0)
+        // {
+        //     GetComponent<SpriteRenderer>().flipX = true;
+        // } 
+        // else 
+        // {
+        //     GetComponent<SpriteRenderer>().flipX = false;
+        // }
+        float xScale = transform.localScale.x;
+        if((xSpeed <0 && xScale>0)||(xSpeed >0 && xScale <1))
+        {
+            transform.localScale*=new Vector2(-1,1);
+        }
+
+        _animator.SetFloat("Speed",Mathf.Abs(xSpeed));
+
     }
     // Update is called once per frame
     void Update()
@@ -37,6 +56,7 @@ public class Player : MonoBehaviour
         // pos.x+=xpos;
         // transform.position = pos;
         grounded = Physics2D.OverlapCircle(feet.position,.2f,whatIsGround);
+        _animator.SetBool("Grounded",grounded);
         if(Input.GetButtonDown("Jump")&& grounded)
         {
             _rigidbody.AddForce(new Vector2(0, jumpForce));
