@@ -61,12 +61,12 @@ public class Player : MonoBehaviour
         // Vector2 pos = transform.position;
         // pos.x+=xpos;
         // transform.position = pos;
-        // if (transform.position.y < GameManager.getDeathZone()) {
-        //     GameManager.ResetSpeed();
-        //     GameManager.resetBullets();
-        //     GameManager.resetDeathZone();
-        //     SceneManager.LoadScene(currLevel);
-        // }
+        if (transform.position.y < GameManager.getDeathZone()) {
+            GameManager.ResetSpeed();
+            GameManager.resetBullets();
+            GameManager.resetDeathZone();
+            SceneManager.LoadScene(currLevel);
+        }
         grounded = Physics2D.OverlapCircle(feet.position,.4f,whatIsGround);
         if(Input.GetButtonDown("Jump")&& grounded)
         {
