@@ -1640,7 +1640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitSnd: {fileID: 0}
   explosion: {fileID: 0}
-  currLevel: Level2 1
+  currLevel: Level4
   speed: 5
   jumpForce: 400
   whatIsGround:

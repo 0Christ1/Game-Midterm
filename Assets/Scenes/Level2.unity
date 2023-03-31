@@ -506,7 +506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 922f8363ecd79e04082fc5e5fc261bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Level2 1
+  levelToLoad: Level4
 --- !u!70 &332552587
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1036,7 +1036,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitSnd: {fileID: 0}
   explosion: {fileID: 0}
-  currLevel: Level2 1
+  currLevel: Level2
   speed: 5
   jumpForce: 400
   whatIsGround:
