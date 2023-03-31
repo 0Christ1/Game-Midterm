@@ -7,10 +7,7 @@ TagManager:
   - Pink
   - Button
   - Feet
-  - Bullet
-  - TriggerPoint
-  - MovingBlock
-  - MovingShooter
+  - spike
   layers:
   - Default
   - TransparentFX
