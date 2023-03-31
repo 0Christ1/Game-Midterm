@@ -36,17 +36,44 @@ public class Player : MonoBehaviour
             GameManager.ResetSpeed();
             GameManager.resetBullets();
             GameManager.resetDeathZone();
-            SceneManager.LoadScene(currLevel);
-            // int lives = _gamemanager.RemoveLife();
+            int lives = GameManager.RemoveLife();
             // _audiosource.PlayOneShot(hitSnd);            
-            // if (lives == 0) {
-            //     Instantiate(explosion, transform.position, Quaternion.identity);
-            //     Destroy(other.gameObject);
-            //     Destroy(gameObject);
-            //     SceneManager.LoadScene("End");
-            // }
+            if (lives == 0) {
+                // Instantiate(explosion, transform.position, Quaternion.identity);
+                SceneManager.LoadScene("Start");
+                GameManager.ResetLives();
+            }
+            else{
+            SceneManager.LoadScene(currLevel);
+            }
         }
     }
+    
+    IEnumerator EndingScreen() {
+        SceneManager.LoadScene("End");
+        yield return new WaitForSeconds(.01f);
+        SceneManager.LoadScene("Level2");
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("spike"))
+        {
+            GameManager.ResetSpeed();
+            GameManager.resetBullets();
+            GameManager.resetDeathZone();
+            int lives = GameManager.RemoveLife();
+            // _audiosource.PlayOneShot(hitSnd);            
+            if (lives == 0) {
+                // Instantiate(explosion, transform.position, Quaternion.identity);
+                SceneManager.LoadScene("Start");
+                GameManager.ResetLives();
+            }
+            else{
+            SceneManager.LoadScene(currLevel);
+            }
+        }
+    }    
 
     void FixedUpdate()
     {
@@ -65,7 +92,16 @@ public class Player : MonoBehaviour
             GameManager.ResetSpeed();
             GameManager.resetBullets();
             GameManager.resetDeathZone();
+            int lives = GameManager.RemoveLife();
+            // _audiosource.PlayOneShot(hitSnd);            
+            if (lives == 0) {
+                // Instantiate(explosion, transform.position, Quaternion.identity);
+                SceneManager.LoadScene("Start");
+                GameManager.ResetLives();
+            }
+            else{
             SceneManager.LoadScene(currLevel);
+            }
         }
         grounded = Physics2D.OverlapCircle(feet.position,.4f,whatIsGround);
         if(Input.GetButtonDown("Jump")&& grounded)

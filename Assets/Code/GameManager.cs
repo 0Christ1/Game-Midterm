@@ -6,7 +6,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    private int lives = 3;
+    private static int lives = 3;
     private static int bulletspeed = 600;
     private static int numBulletsShot = 0;
     private static int deathzone = -9;
@@ -36,11 +36,12 @@ public class GameManager : MonoBehaviour
     public static void resetDeathZone() {deathzone = -9;}
 
     public static void ResetSpeed() {bulletspeed = 600;}
+    public static void ResetLives() {lives = 3;}
 
     public static int getSpeed() {
         return bulletspeed;
     }
-    public int RemoveLife() {
+    public static int RemoveLife() {
         lives -= 1;
         // livesUI.text = "Lives: " + lives;
         return lives;

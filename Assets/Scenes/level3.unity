@@ -1288,7 +1288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4261cae3c1d5604f9442b07a0d0a457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: level2
+  nextLevel: Level4
 --- !u!61 &656595809
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1601,7 +1601,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &934635965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1631,7 +1631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -2327,7 +2327,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 7.5090013
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2430,6 +2430,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 1186511615921228939, guid: 2861ca7cd7aac4b31a84098ca0e77569, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1186511615921228939, guid: 2861ca7cd7aac4b31a84098ca0e77569, type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
@@ -2452,6 +2456,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30be6b8eac979427098873b8b2cd4934, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitSnd: {fileID: 0}
+  explosion: {fileID: 0}
+  currLevel: level3
   speed: 10
   jumpForce: 600
   whatIsGround:
@@ -2485,7 +2492,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1712974202}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: feet
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -2773,7 +2780,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1950856092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3030,8 +3037,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2143324095}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 4.5, y: 3.5, z: 1}
+  m_LocalPosition: {x: 0, y: -0.0626, z: 10}
+  m_LocalScale: {x: 4.5, y: 4.6816435, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
