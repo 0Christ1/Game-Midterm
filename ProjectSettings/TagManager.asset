@@ -16,7 +16,6 @@ TagManager:
   - Water
   - UI
   - Player
-  - Button
   - 
   - 
   - 
@@ -48,6 +47,4 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Front
-    uniqueID: 3443526535
     locked: 0
