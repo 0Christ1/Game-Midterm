@@ -9,10 +9,8 @@ public class Portal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        print("woo");
         if (other.gameObject.CompareTag("Player"))
         {
-            print("ha");
             SceneManager.LoadScene(levelToLoad);
 }}
 }

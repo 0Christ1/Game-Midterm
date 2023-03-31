@@ -1,10 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
+    public AudioClip hitSnd;
+    AudioSource _audiosource;
+
+    public GameObject explosion;
+    GameManager _gamemanager;
+    public string currLevel;
+
     public int speed = 10;
     public int jumpForce = 700;
     private Rigidbody2D _rigidbody;
@@ -16,10 +24,33 @@ public class Player : MonoBehaviour
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
+       _gamemanager = GameObject.FindObjectOfType<GameManager>();
+       _audiosource = GetComponent<AudioSource>();
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.CompareTag("Bullet")) {
+            // Destroy(other.gameObject);
+            // Destroy(gameObject);
+            GameManager.ResetSpeed();
+            GameManager.resetBullets();
+            GameManager.resetDeathZone();
+            SceneManager.LoadScene(currLevel);
+            // int lives = _gamemanager.RemoveLife();
+            // _audiosource.PlayOneShot(hitSnd);            
+            // if (lives == 0) {
+            //     Instantiate(explosion, transform.position, Quaternion.identity);
+            //     Destroy(other.gameObject);
+            //     Destroy(gameObject);
+            //     SceneManager.LoadScene("End");
+            // }
+        }
     }
 
     void FixedUpdate()
     {
+        print(GameManager.getSpeed());
         float xSpeed = Input.GetAxis("Horizontal")*speed;
         _rigidbody.velocity = new Vector2(xSpeed, _rigidbody.velocity.y);
     }
@@ -30,6 +61,12 @@ public class Player : MonoBehaviour
         // Vector2 pos = transform.position;
         // pos.x+=xpos;
         // transform.position = pos;
+        // if (transform.position.y < GameManager.getDeathZone()) {
+        //     GameManager.ResetSpeed();
+        //     GameManager.resetBullets();
+        //     GameManager.resetDeathZone();
+        //     SceneManager.LoadScene(currLevel);
+        // }
         grounded = Physics2D.OverlapCircle(feet.position,.4f,whatIsGround);
         if(Input.GetButtonDown("Jump")&& grounded)
         {
