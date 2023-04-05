@@ -37,14 +37,17 @@ public class Player : MonoBehaviour
             GameManager.resetBullets();
             GameManager.resetDeathZone();
             int lives = GameManager.RemoveLife();
+            GameManager.atTop = true;
             // _audiosource.PlayOneShot(hitSnd);            
             if (lives == 0) {
                 // Instantiate(explosion, transform.position, Quaternion.identity);
                 SceneManager.LoadScene("Start");
                 GameManager.ResetLives();
+                GameManager.changeResetStatus(true);
             }
             else{
             SceneManager.LoadScene(currLevel);
+            GameManager.changeResetStatus(true);
             }
         }
     }
@@ -63,21 +66,25 @@ public class Player : MonoBehaviour
             GameManager.resetBullets();
             GameManager.resetDeathZone();
             int lives = GameManager.RemoveLife();
+            GameManager.atTop = true;
             // _audiosource.PlayOneShot(hitSnd);            
             if (lives == 0) {
                 // Instantiate(explosion, transform.position, Quaternion.identity);
                 SceneManager.LoadScene("Start");
                 GameManager.ResetLives();
+                GameManager.changeResetStatus(true);
+
             }
             else{
             SceneManager.LoadScene(currLevel);
+            GameManager.changeResetStatus(true);
             }
         }
     }    
 
     void FixedUpdate()
     {
-        print(GameManager.getSpeed());
+        // print(GameManager.getResetStatus());
         float xSpeed = Input.GetAxis("Horizontal")*speed;
         _rigidbody.velocity = new Vector2(xSpeed, _rigidbody.velocity.y);
     }
@@ -93,14 +100,17 @@ public class Player : MonoBehaviour
             GameManager.resetBullets();
             GameManager.resetDeathZone();
             int lives = GameManager.RemoveLife();
+            GameManager.atTop = true;
             // _audiosource.PlayOneShot(hitSnd);            
             if (lives == 0) {
                 // Instantiate(explosion, transform.position, Quaternion.identity);
+                GameManager.changeResetStatus(true);
                 SceneManager.LoadScene("Start");
                 GameManager.ResetLives();
             }
             else{
             SceneManager.LoadScene(currLevel);
+            GameManager.changeResetStatus(true);
             }
         }
         grounded = Physics2D.OverlapCircle(feet.position,.4f,whatIsGround);

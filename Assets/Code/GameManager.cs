@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     private static int bulletspeed = 600;
     private static int numBulletsShot = 0;
     private static int deathzone = -9;
+    private static bool levelReset = true;
+    public static bool atTop = true;
     // public TextMeshProUGUI livesUI;
 
     private void Awake() {
@@ -45,6 +47,12 @@ public class GameManager : MonoBehaviour
         lives -= 1;
         // livesUI.text = "Lives: " + lives;
         return lives;
+    }
+
+    public static bool getResetStatus() {return levelReset;}
+
+    public static void changeResetStatus(bool val) {
+        levelReset = val;
     }
     // Update is called once per frame
     public void Update()

@@ -8,6 +8,13 @@ TagManager:
   - Button
   - Feet
   - spike
+  - MovingShooter
+  - MovingBlock
+  - TriggerPoint
+  - Bullet
+  - FallingBlocks
+  - Invis
+  - DownHint
   layers:
   - Default
   - TransparentFX

@@ -12,5 +12,7 @@ public class Portal : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene(levelToLoad);
+            GameManager.changeResetStatus(true);
+            GameManager.atTop = true;
 }}
 }

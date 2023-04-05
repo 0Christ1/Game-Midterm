@@ -22,6 +22,7 @@ public class door : MonoBehaviour
         if (col.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene(nextLevel);
+            GameManager.changeResetStatus(true);
         }
     }
 }
