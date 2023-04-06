@@ -675,7 +675,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040309845}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.02, y: -0.64, z: 0}
+  m_LocalPosition: {x: 0.044, y: -0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -736,18 +736,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0068997145, y: -0.020697653}
+  m_Offset: {x: 0.0017254055, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.1142857, y: 1.4857143}
-    newSize: {x: 1.1142857, y: 1.4857143}
+    oldSize: {x: 0.63359034, y: 0.72}
+    newSize: {x: 3.8015418, y: 4.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1441324, y: 1.5272063}
+  m_Size: {x: 0.63704115, y: 0.72}
   m_EdgeRadius: 0
 --- !u!212 &2073677530
 SpriteRenderer:
@@ -790,12 +790,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -103686772, guid: f004997d68eb44eceb0f0c0d9284b026, type: 3}
+  m_Sprite: {fileID: 1149686936, guid: ba3a30ae151ae4f618011849fb97da49, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.1142857, y: 1.4857143}
+  m_Size: {x: 3.8015418, y: 4.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -809,7 +809,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073677527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.24, y: 1.88, z: 0}
+  m_LocalPosition: {x: -3.255, y: 1.501, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -829,9 +829,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30be6b8eac979427098873b8b2cd4934, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSnd: {fileID: 0}
-  explosion: {fileID: 0}
-  currLevel: 
   speed: 5
   jumpForce: 500
   whatIsGround:

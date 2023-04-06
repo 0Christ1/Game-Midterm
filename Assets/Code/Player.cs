@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
     public string currLevel;
 
     public int speed = 10;
-    public int jumpForce = 600;
+    public int jumpForce = 700;
     private Rigidbody2D _rigidbody;
 
     public LayerMask whatIsGround;
@@ -141,7 +141,7 @@ public class Player : MonoBehaviour
                 GameManager.ResetLives();
             }
             else{
-                SceneManager.LoadScene(currLevel);
+            SceneManager.LoadScene(currLevel);
             }
         }
         grounded = Physics2D.OverlapCircle(feet.position,.4f,whatIsGround);

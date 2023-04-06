@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
 guid: ccc30f1dfaac5450d8186d7d6ee077c1
-=======
-guid: 0f3139972a32746ae9425083511c26aa
->>>>>>> Stashed changes
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -51,11 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< Updated upstream
   spritePixelsToUnits: 100
-=======
-  spritePixelsToUnits: 30
->>>>>>> Stashed changes
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -129,11 +121,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 12
-<<<<<<< Updated upstream
         y: 284
-=======
-        y: 400
->>>>>>> Stashed changes
         width: 37
         height: 52
       alignment: 0
@@ -143,31 +131,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< Updated upstream
       spriteID: ea0c09e1c33f14adbaac5b4c1f4af908
       internalID: 1271048132
-=======
-      spriteID: 5fa66d89ecfe54bd382ab7698c2d9c5a
-      internalID: 668511672
->>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<< Updated upstream
       name: Walk1
       rect:
         serializedVersion: 2
         x: 12
         y: 200
-=======
-      name: Player_1
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 298
->>>>>>> Stashed changes
         width: 37
         height: 52
       alignment: 0
@@ -177,31 +152,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< Updated upstream
       spriteID: c4d12fa8f12264b6db76a04571f826fb
       internalID: 24302597
-=======
-      spriteID: 569b1b29856634304aac60e98b8d21fa
-      internalID: 534219701
->>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<< Updated upstream
       name: Walk2
       rect:
         serializedVersion: 2
         x: 48
         y: 200
-=======
-      name: Player_2
-      rect:
-        serializedVersion: 2
-        x: 161
-        y: 297
->>>>>>> Stashed changes
         width: 37
         height: 52
       alignment: 0
@@ -211,31 +173,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< Updated upstream
       spriteID: a54455880123c4090bcd9abe64d2d23c
       internalID: -912852380
-=======
-      spriteID: 6a0800642ff57440c833eb8f787a058c
-      internalID: 1418817383
->>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<< Updated upstream
       name: Walk3
       rect:
         serializedVersion: 2
         x: 84
         y: 200
-=======
-      name: Player_3
-      rect:
-        serializedVersion: 2
-        x: 326
-        y: 299
->>>>>>> Stashed changes
         width: 37
         height: 52
       alignment: 0
@@ -245,19 +194,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< Updated upstream
       spriteID: 0e33cac202fd84844b8865a1a42fc3f2
       internalID: 942390318
-=======
-      spriteID: f8b1ea1afcbd14dfab197db549502b79
-      internalID: 1027597178
->>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<< Updated upstream
       name: Walk4
       rect:
         serializedVersion: 2
@@ -305,13 +248,6 @@ TextureImporter:
         serializedVersion: 2
         x: 60
         y: 116
-=======
-      name: Player_4
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 168
->>>>>>> Stashed changes
         width: 39
         height: 52
       alignment: 0
@@ -321,19 +257,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< Updated upstream
       spriteID: 2f6b397e9d153415ba7aa3b2a2b254d7
       internalID: -8309370
-=======
-      spriteID: 0052b25e80c3d48848ada6c754468cb7
-      internalID: -635476807
->>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<< Updated upstream
       name: jump1
       rect:
         serializedVersion: 2
@@ -360,13 +290,6 @@ TextureImporter:
         serializedVersion: 2
         x: 57
         y: 28
-=======
-      name: Player_5
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 38
->>>>>>> Stashed changes
         width: 39
         height: 52
       alignment: 0
@@ -376,31 +299,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< Updated upstream
       spriteID: 8ba0637ebe79f43c1beb9e0d55a01a85
       internalID: 1067756475
-=======
-      spriteID: f0d779d2d1922437ba22ff870004cd17
-      internalID: 1804930313
->>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<< Updated upstream
       name: jump3
       rect:
         serializedVersion: 2
         x: 105
         y: 28
-=======
-      name: Player_6
-      rect:
-        serializedVersion: 2
-        x: 180
-        y: 36
->>>>>>> Stashed changes
         width: 39
         height: 52
       alignment: 0
@@ -410,13 +320,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< Updated upstream
       spriteID: da797b6bb130d40f496bda25e19762b0
       internalID: -609792328
-=======
-      spriteID: 79dacd12520b845db8dc5819d350e85a
-      internalID: -896459100
->>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
@@ -432,7 +337,6 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-<<<<<<< Updated upstream
       Attack2: -8309370
       Walk3: 942390318
       jump1: -1381352837
@@ -443,15 +347,6 @@ TextureImporter:
       jump3: -609792328
       Walk1: 24302597
       Normal: 1271048132
-=======
-      Player_2: 1418817383
-      Player_4: -635476807
-      Player_6: -896459100
-      Player_1: 534219701
-      Player_3: 1027597178
-      Player_5: 1804930313
-      Normal: 668511672
->>>>>>> Stashed changes
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

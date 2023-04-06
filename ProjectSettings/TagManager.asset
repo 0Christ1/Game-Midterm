@@ -8,7 +8,6 @@ TagManager:
   - Button
   - Feet
   - spike
-  - Bullet
   layers:
   - Default
   - TransparentFX
