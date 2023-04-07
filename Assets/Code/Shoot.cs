@@ -32,7 +32,7 @@ public class Shoot : MonoBehaviour
         while(true) {
             GameObject newbullet = Instantiate(bulletfab, transform.position, Quaternion.identity);
             GameManager.AddBullet();
-            // _audiosource.PlayOneShot(shootSnd);  
+            _audiosource.PlayOneShot(shootSnd);
             newbullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(-(GameManager.getSpeed()), 0));
             yield return new WaitForSeconds(.8f);
             }
