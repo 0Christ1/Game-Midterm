@@ -19,8 +19,26 @@ public class Enemies : MonoBehaviour
         _animator = GetComponent<Animator>();
         _rigidbody = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        StartCoroutine(EnemyMove());
     }
     
+    private void Update() 
+    {
+        if (player.position.x > transform.position.x && transform.localScale.x < 0 || player = position.x < transform.position.x && transform.localScale.x > 0)
+        {
+            transform.localScale *= new Vector2(-1, 1);
+        }
+    }
+
+    IEnumerator EnemyMove()
+    {
+        while(true)
+        {
+            yield return new WaitForSeconds(Random.Range(1f, 5f));
+            _rigidbody.AddForce(new Vector2(transform.localScale.x * 100, 100));
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         Instantiate(explosion, transform.position, Quaternion.identity);
