@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     public int speed = 10;
     public int jumpForce = 700;
+
+    public int bulletForce = 500;
     private Rigidbody2D _rigidbody;
     private Animator  _animator;
 
