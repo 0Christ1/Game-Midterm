@@ -5,19 +5,9 @@ using UnityEngine;
 public class Player_test : MonoBehaviour
 {
 
-    public int speed = 5;
+    public int speed = 10;
 
-    public int jumpForce = 500;
-
-    bool grounded = false;
-
-    private Rigidbody2D _rigidbody;
-
-    private Animator _animator;
-
-    public LayerMask whatIsGround;
-
-    public Transform feet;
+    public int jumpForce = 700;
 
     public int bulletForce = 500;
 
@@ -25,15 +15,27 @@ public class Player_test : MonoBehaviour
 
     public Transform spawnPoint;
 
-    
+    public AudioClip shootSnd;
+
+    public LayerMask whatIsGround;
+
+    public Transform feet;
+
+    bool grounded = false;
+
+    private Rigidbody2D _rigidbody;
+
+    private Animator _animator;
+
+    private AudioSource _audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
+        _audioSource = GetComponent<AudioSource>();
     }
-
     
     void FixedUpdate()
     {
@@ -60,10 +62,22 @@ public class Player_test : MonoBehaviour
             _rigidbody.AddForce(new Vector2(0, jumpForce));
         }
 
-        if(Input.GetButtonDown("Fire"))
+        if(Input.GetButtonDown("Fire1"))
         {
+            _audioSource.PlayOneShot(shootSnd);
+
+            _animator.Play("Attack");
+            
             GameObject newBullet =  Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity);
-            newBullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(bulletForce, 0));
+
+            if (transform.localScale.x < 0) 
+            {
+                newBullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(-bulletForce, 0));
+            }
+            else
+            {
+                newBullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(bulletForce, 0));
+            }
         }
     }
 }

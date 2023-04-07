@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
 guid: ccc30f1dfaac5450d8186d7d6ee077c1
-=======
-guid: 0f3139972a32746ae9425083511c26aa
->>>>>>> Stashed changes
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -51,11 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< Updated upstream
-  spritePixelsToUnits: 100
-=======
   spritePixelsToUnits: 30
->>>>>>> Stashed changes
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -128,295 +120,124 @@ TextureImporter:
       name: Normal
       rect:
         serializedVersion: 2
-        x: 12
-<<<<<<< Updated upstream
-        y: 284
-=======
+        x: 11
         y: 400
->>>>>>> Stashed changes
         width: 37
         height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< Updated upstream
-      spriteID: ea0c09e1c33f14adbaac5b4c1f4af908
-      internalID: 1271048132
-=======
-      spriteID: 5fa66d89ecfe54bd382ab7698c2d9c5a
-      internalID: 668511672
->>>>>>> Stashed changes
+      spriteID: 7ead73519acea43abb027d8836db6638
+      internalID: 1881173886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<< Updated upstream
       name: Walk1
       rect:
         serializedVersion: 2
         x: 12
-        y: 200
-=======
-      name: Player_1
-      rect:
-        serializedVersion: 2
-        x: 13
         y: 298
->>>>>>> Stashed changes
         width: 37
         height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< Updated upstream
-      spriteID: c4d12fa8f12264b6db76a04571f826fb
-      internalID: 24302597
-=======
-      spriteID: 569b1b29856634304aac60e98b8d21fa
-      internalID: 534219701
->>>>>>> Stashed changes
+      spriteID: 1f1b4c8ab390445bbb80143621f5f0bc
+      internalID: -1186374557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<< Updated upstream
       name: Walk2
       rect:
         serializedVersion: 2
-        x: 48
-        y: 200
-=======
-      name: Player_2
-      rect:
-        serializedVersion: 2
-        x: 161
-        y: 297
->>>>>>> Stashed changes
-        width: 37
-        height: 52
+        x: 159
+        y: 295
+        width: 38
+        height: 55
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< Updated upstream
-      spriteID: a54455880123c4090bcd9abe64d2d23c
-      internalID: -912852380
-=======
-      spriteID: 6a0800642ff57440c833eb8f787a058c
-      internalID: 1418817383
->>>>>>> Stashed changes
+      spriteID: c11ec175b56a843e392827879d405490
+      internalID: 1070397217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<< Updated upstream
       name: Walk3
       rect:
         serializedVersion: 2
-        x: 84
-        y: 200
-=======
-      name: Player_3
-      rect:
-        serializedVersion: 2
-        x: 326
+        x: 325
         y: 299
->>>>>>> Stashed changes
         width: 37
         height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< Updated upstream
-      spriteID: 0e33cac202fd84844b8865a1a42fc3f2
-      internalID: 942390318
-=======
-      spriteID: f8b1ea1afcbd14dfab197db549502b79
-      internalID: 1027597178
->>>>>>> Stashed changes
+      spriteID: 47d8a118a845146aa989e64fc88e5a28
+      internalID: -1934296048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<< Updated upstream
-      name: Walk4
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 200
-        width: 37
-        height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13578a94d281c43c4a6f5eae525c9d9c
-      internalID: -842795647
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack1
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 116
-        width: 37
-        height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 28fdcf6425a3b4f2e8ba53c39bb811bd
-      internalID: -1406152745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack2
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 116
-=======
-      name: Player_4
+      name: Attack
       rect:
         serializedVersion: 2
         x: 22
         y: 168
->>>>>>> Stashed changes
         width: 39
         height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< Updated upstream
-      spriteID: 2f6b397e9d153415ba7aa3b2a2b254d7
-      internalID: -8309370
-=======
-      spriteID: 0052b25e80c3d48848ada6c754468cb7
-      internalID: -635476807
->>>>>>> Stashed changes
+      spriteID: 06ca56a6fb96f4a22a7968d75955862c
+      internalID: 1868221736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<< Updated upstream
-      name: jump1
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 28
-        width: 37
-        height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5372843b17b11483eb8622f5d942e228
-      internalID: -1381352837
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump2
-      rect:
-        serializedVersion: 2
-        x: 57
-        y: 28
-=======
-      name: Player_5
+      name: Jump
       rect:
         serializedVersion: 2
         x: 24
         y: 38
->>>>>>> Stashed changes
         width: 39
         height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< Updated upstream
-      spriteID: 8ba0637ebe79f43c1beb9e0d55a01a85
-      internalID: 1067756475
-=======
-      spriteID: f0d779d2d1922437ba22ff870004cd17
-      internalID: 1804930313
->>>>>>> Stashed changes
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-<<<<<<< Updated upstream
-      name: jump3
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 28
-=======
-      name: Player_6
-      rect:
-        serializedVersion: 2
-        x: 180
-        y: 36
->>>>>>> Stashed changes
-        width: 39
-        height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-<<<<<<< Updated upstream
-      spriteID: da797b6bb130d40f496bda25e19762b0
-      internalID: -609792328
-=======
-      spriteID: 79dacd12520b845db8dc5819d350e85a
-      internalID: -896459100
->>>>>>> Stashed changes
+      spriteID: ae97d07b344fd49928cf7ecd41789a10
+      internalID: -168576009
       vertices: []
       indices: 
       edges: []
@@ -432,26 +253,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-<<<<<<< Updated upstream
-      Attack2: -8309370
-      Walk3: 942390318
-      jump1: -1381352837
-      Walk4: -842795647
-      Walk2: -912852380
-      Attack1: -1406152745
-      jump2: 1067756475
-      jump3: -609792328
-      Walk1: 24302597
-      Normal: 1271048132
-=======
-      Player_2: 1418817383
-      Player_4: -635476807
-      Player_6: -896459100
-      Player_1: 534219701
-      Player_3: 1027597178
-      Player_5: 1804930313
-      Normal: 668511672
->>>>>>> Stashed changes
+      Walk3: -1934296048
+      Attack: 1868221736
+      Player_6: -1100582875
+      Walk2: 1070397217
+      Jump: -168576009
+      Walk1: -1186374557
+      Normal: 1881173886
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
